@@ -1,9 +1,7 @@
-import React from 'react';
-
 const Footer = () => {
     return (
-        <div>
-            <h1>My Footer</h1>
+        <div className='bg-[#A8BA57] w-full h-auto'>
+            <h1>Myanmar Constitutional Tribunal Office</h1>
         </div>
     );
 };
