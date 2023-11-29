@@ -1,3 +1,9 @@
+import History from '@/components/Home/History';
+
 export default function Home() {
-    return <>This is home.</>;
+    return (
+        <main className='container-fluid'>
+            <History />
+        </main>
+    );
 }
