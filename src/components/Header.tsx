@@ -15,7 +15,7 @@ const Header = () => {
                             name='search'
                             id=''
                             placeholder='Search...'
-                            className='bg-white border focus:border-none focus:outline-none rounded-2xl pl-4 py-1 shadow-lg placeholder:text-gray-400 w-[100px] min-[425px]:w-[150px] md:w-[120px] lg:w-auto'
+                            className='bg-white border outline-none rounded-2xl pl-4 py-1 shadow-lg placeholder:text-gray-400 w-[100px] min-[425px]:w-[150px] md:w-[120px] lg:w-auto focus:border-[--navbar-color]'
                         />
                         <div className='bg-white flex justify-center items-center w-[35px] h-[35px] shadow-lg rounded-full border cursor-pointer'>
                             <Search className='w-[15px] text-[#388E3C]'/>
