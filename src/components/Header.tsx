@@ -25,16 +25,16 @@ const Header = () => {
             <div className='w-[90%] mx-auto flex flex-col md:flex-row justify-between items-center gap-y-3 py-2'>
                 <Image src='/assets/Images/ctulogo.png' alt='logo' width={320} height={320} />
                 <div className='relative flex items-center gap-4 md:gap-4 lg:gap-4'>
-                    <div className='flex gap-1 lg:gap-2'>
+                    <div className='flex items-center gap-1 lg:gap-2'>
                         <input
                             type='text'
                             name='search'
                             id=''
                             placeholder='Search...'
-                            className='bg-white border outline-none rounded-2xl pl-4 py-1 shadow-lg placeholder:text-gray-400 w-[100px] min-[425px]:w-[150px] md:w-[120px] lg:w-auto focus:border-[--navbar-color]'
+                            className='bg-white border outline-none rounded-2xl pl-4 py-1 shadow-lg placeholder:text-gray-400 w-[100px] min-[425px]:w-[150px] md:w-[120px] lg:w-auto focus:border-[--navbar-color] min-[320px]:placeholder:text-[14px]'
                         />
-                        <div className='bg-white flex justify-center items-center w-[35px] h-[35px] shadow-lg rounded-full border cursor-pointer'>
-                            <Search className='w-[15px] text-[#388E3C]' />
+                        <div className='bg-white flex justify-center items-center w-[30px] h-[30px] md:w-[35px] md:h-[35px] shadow-lg rounded-full border cursor-pointer'>
+                            <Search className='w-[12px] md:w-[15px] text-[#388E3C]' />
                         </div>
                     </div>
                     <div>
@@ -43,12 +43,12 @@ const Header = () => {
                                 {selectedOption ? (
                                     <div className='flex items-center gap-1 lg:gap-2'>
                                         <Image src={selectedOption.img} alt='img' width={20} height={20} />
-                                        <span className='text-[14px]'>{selectedOption.label}</span>
+                                        <span className='min-[320px]:text-[12px] text-[14px]'>{selectedOption.label}</span>
                                     </div>
                                 ) : (
                                     <div className='flex items-center gap-1 lg:gap-2'>
                                         <Image src='/assets/Images/myanmar.png' alt='img' width={20} height={20} />
-                                        <span className='text-[14px] '>Myanmar</span>
+                                        <span className='min-[320px]:text-[12px] md:text-[14px] '>Myanmar</span>
                                     </div>
                                 )}
                             </div>
@@ -66,7 +66,7 @@ const Header = () => {
                                         <div key={Math.random()}>
                                             <button type='button' onClick={() => onOptionClicked(option)} className='flex items-center  pl-3'>
                                                 <Image src={option.img} alt='english' width={20} height={20} />
-                                                <div className='block rounded-lg px-4 py-2 text-sm text-gray-500 no-underline hover:bg-gray-100 text-[14px]'>{option.label}</div>
+                                                <div className='block rounded-lg px-4 py-2 text-sm text-gray-500 no-underline hover:bg-gray-100 text-[14px] min-[320px]:text-[12px]'>{option.label}</div>
                                             </button>
                                         </div>
                                     ))}
