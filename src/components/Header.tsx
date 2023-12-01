@@ -43,12 +43,12 @@ const Header = () => {
                                 {selectedOption ? (
                                     <div className='flex items-center gap-1 lg:gap-2'>
                                         <Image src={selectedOption.img} alt='img' width={20} height={20} />
-                                        <span className='text-[14px] lg:text-[18px]'>{selectedOption.label}</span>
+                                        <span className='text-[14px]'>{selectedOption.label}</span>
                                     </div>
                                 ) : (
                                     <div className='flex items-center gap-1 lg:gap-2'>
                                         <Image src='/assets/Images/myanmar.png' alt='img' width={20} height={20} />
-                                        <span className='text-[14px] lg:text-[18px]'>Myanmar</span>
+                                        <span className='text-[14px] '>Myanmar</span>
                                     </div>
                                 )}
                             </div>
@@ -66,7 +66,7 @@ const Header = () => {
                                         <div key={Math.random()}>
                                             <button type='button' onClick={() => onOptionClicked(option)} className='flex items-center  pl-3'>
                                                 <Image src={option.img} alt='english' width={20} height={20} />
-                                                <div className='block rounded-lg px-4 py-2 text-sm text-gray-500 no-underline hover:bg-gray-100'>{option.label}</div>
+                                                <div className='block rounded-lg px-4 py-2 text-sm text-gray-500 no-underline hover:bg-gray-100 text-[14px]'>{option.label}</div>
                                             </button>
                                         </div>
                                     ))}
