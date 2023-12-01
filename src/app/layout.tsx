@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Header from '@/components/Header';
 import Providers from '@/provider/Provider';
+import Navbar from '@/components/navbar/Navbar';
 
 export const metadata: Metadata = {
     title: 'Create Next App',
@@ -13,7 +14,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <html lang='en'>
             <body>
                 <Providers>
-                    <Header />
+                    <div className='bg-slate-900 py-6'>
+                        <Header />
+                        <Navbar />
+                    </div>
                     {children}
                 </Providers>
             </body>
