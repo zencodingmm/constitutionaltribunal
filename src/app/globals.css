@@ -10,10 +10,6 @@
     --text-color: #010c01;
 }
 
-.history-gradient {
-    color: #071703;
-    background-image: -webkit-linear-gradient(0deg, #071703 0%, #a7ba58 50%, #10d228 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+section{
+    margin-top: 64px;
 }
