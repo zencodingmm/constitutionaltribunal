@@ -8,3 +8,7 @@
     --bg-secondary : #ffffff;
     --text-color : #010c01;
 }
+
+section{
+    margin-top: 64px;
+}
