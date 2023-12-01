@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import Header from '@/components/Header';
-import Providers from '@/provider/Provider';
 import Navbar from '@/components/navbar/Navbar';
+import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
     title: 'Create Next App',
@@ -13,13 +13,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     return (
         <html lang='en'>
             <body>
-                <Providers>
-                    <div className='bg-slate-900 py-6'>
                         <Header />
                         <Navbar />
-                    </div>
-                    {children}
-                </Providers>
+                {children}
+                {/* <Footer /> */}
             </body>
         </html>
     );
