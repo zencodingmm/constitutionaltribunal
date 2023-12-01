@@ -8,11 +8,11 @@ import ActivitiesAnnouncemetns from './Activities-Announcemetns ';
 
 const News = () => {
     return (
-        <section className=' container w-[90%] mx-auto '>
+        <section className=' container-fluid   bg-[--bg-first] '>
             {/* News Section */}
-            <div>
-                <h1 className=' text-[30px] text-[--text-color] text-center mb-5 '>News</h1>
-                <div className=' flex gap-5 flex-col lg:flex-row'>
+            <div className='mx-auto w-[90%]'>
+                <h1 className=' text-[30px] text-[--text-color] text-center mb-8'>Daily News</h1>
+                <div className=' flex gap-10 flex-col lg:flex-row'>
                     {/* left section */}
                     <div className='w-full lg:w-[50%] flex flex-col gap-[inherit]'>
                         <div className='basis-[50%]'>
