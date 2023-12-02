@@ -24,10 +24,10 @@ const Header = () => {
         <header>
             <div className='w-[90%] mx-auto flex flex-col md:flex-row justify-between items-center gap-y-3 py-2'>
                 <Image src='/assets/Images/ctulogo.png' alt='logo' width={320} height={320} />
-                <div className='relative flex items-center gap-4 md:gap-4 lg:gap-4'>
+                <div className='relative flex items-center gap-8 md:gap-4 lg:gap-4'>
                     <div className='flex items-center gap-1 lg:gap-2'>
                         <input
-                            type='text'
+                            type='search'
                             name='search'
                             id=''
                             placeholder='Search...'
