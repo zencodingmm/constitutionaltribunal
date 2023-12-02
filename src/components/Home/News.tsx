@@ -8,7 +8,7 @@ import ActivitiesAnnouncemetns from './Activities-Announcemetns ';
 
 const News = () => {
     return (
-        <section className=' container-fluid   bg-[--bg-first] '>
+        <section className=' container-fluid py-[5rem]   bg-[--bg-first] '>
             {/* News Section */}
             <div className='mx-auto w-[90%]'>
                 <h1 className=' text-[30px] text-[--text-color] text-center mb-8'>Daily News</h1>

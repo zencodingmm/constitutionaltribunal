@@ -3,6 +3,7 @@ import './globals.css';
 import Header from '@/components/Header';
 import Navbar from '@/components/navbar/Navbar';
 import Footer from '@/components/Footer';
+import CoverImage from '@/components/Home/CoverImage';
 
 export const metadata: Metadata = {
     title: 'Create Next App',
@@ -15,6 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <body>
                         <Header />
                         <Navbar />
+                        <CoverImage/>
                 {children}
                 {/* <Footer /> */}
             </body>

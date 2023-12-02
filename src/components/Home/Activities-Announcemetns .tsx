@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const ActivitiesAnnouncemetns = () => {
     return (
-        <div className='mt-10 w-[90%] mx-auto flex flex-col lg:flex-row gap-5 lg:gap-10'>
+        <div className='w-[90%] mt-[5rem] mx-auto flex flex-col lg:flex-row gap-5 lg:gap-10'>
             {/* Activities */}
             <div className='w-full lg:w-[50%] flex flex-col gap-[16px]'>
                 <h1 className=' text-[30px] text-[--text-color] text-center'>Activities</h1>

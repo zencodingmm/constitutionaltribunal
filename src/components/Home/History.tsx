@@ -5,7 +5,7 @@ import ReadMore from './ReadMore';
 
 const History = async () => {
     return (
-        <section className='container-fluid bg-[--bg-first] m-auto'>
+        <section className='container-fluid bg-[--bg-first] py-[5rem] m-auto'>
             <div className='w-full lg:w-[90%] mx-auto flex flex-col lg:flex-row lg:gap-[2.5rem]'>
                 <div className='w-full lg:w-[50%]'>
                     <Image src={history} alt='history' className='w-full h-full' />
