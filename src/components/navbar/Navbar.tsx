@@ -7,7 +7,7 @@ const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <nav className={`bg-[--navbar-color] w-full z-50 py-5 sticky top-0 mt-[1rem]`}>
+        <nav className={`bg-[--navbar-color] w-full z-50 py-5 sticky top-0 mt-[1rem] md:mt-0`}>
             <div className='w-full max-[768px]:relative'>
                 <div className='w-[90%] mx-auto'>
                     <div className='flex justify-between'>
