@@ -21,7 +21,7 @@ const MenuItems = ({ items, depthLevel }: Type) => {
     return (
         <>
             <li
-                className='relative text-[--text-color] opacity-90 hover:opacity-100 hover:duration-700 text-base font-medium md:whitespace-nowrap'
+                className='relative py-1 text-[--text-color] opacity-90 hover:opacity-100 hover:duration-300 text-base font-medium md:whitespace-nowrap'
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
             >
@@ -30,7 +30,7 @@ const MenuItems = ({ items, depthLevel }: Type) => {
                         <>
                             <button
                                 type='button'
-                                className='hover:text-[--text-hover] font-medium transition-all duration-1000 ease-in-out rounded w-full flex gap-1 items-center justify-between px-2 py-1'
+                                className='hover:text-[--text-hover] font-medium transition-all duration-300 ease-in-out rounded w-full flex gap-1 items-center justify-between px-2'
                                 aria-expanded={dropdown ? 'true' : 'false'}
                                 onClick={() => setDropdown((prev) => !prev)}
                             >
@@ -42,7 +42,7 @@ const MenuItems = ({ items, depthLevel }: Type) => {
                         <>
                             <button
                                 type='button'
-                                className='hover:text-[--text-hover] font-medium transition-all duration-300 ease-in-out rounded w-full flex items-center justify-between px-2 py-2 min-[769px]:hidden'
+                                className='hover:text-[--text-hover] font-medium transition-all duration-300 ease-in-out rounded w-full flex items-center justify-between px-2 min-[769px]:hidden'
                                 aria-expanded={dropdown ? 'true' : 'false'}
                                 onClick={() => setDropdown((prev) => !prev)}
                             >
@@ -50,7 +50,7 @@ const MenuItems = ({ items, depthLevel }: Type) => {
                             </button>
                             <button
                                 type='button'
-                                className='hover:text-[--text-hover] font-medium transition-all duration-300 ease-in-out rounded w-full flex items-center justify-between px-2  py-2 max-[768px]:hidden'
+                                className='hover:text-[--text-hover] font-medium transition-all duration-300 ease-in-out rounded w-full flex items-center justify-between px-2 max-[768px]:hidden'
                                 aria-expanded={dropdown ? 'true' : 'false'}
                                 onClick={() => setDropdown((prev) => !prev)}
                             >
@@ -69,7 +69,6 @@ const MenuItems = ({ items, depthLevel }: Type) => {
                     </Link>
                 )}
             </li>
-            <span className='border-b border-b-black'></span>
         </>
     );
 };
