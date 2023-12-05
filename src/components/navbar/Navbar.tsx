@@ -8,10 +8,7 @@ const Navbar = () => {
 
     return (
 
-        <nav className={`bg-[--navbar-color] w-full z-50 py-2 min-[769px]:py-1 sticky top-0 mt-[1rem]`}>
-
         <nav className={`bg-[--navbar-color] w-full z-50 py-5 sticky top-0 mt-[1rem] md:mt-0`}>
- development
             <div className='w-full max-[768px]:relative'>
                 <div className='w-[90%] mx-auto'>
                     <div className='flex justify-between'>
