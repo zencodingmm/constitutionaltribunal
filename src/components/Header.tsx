@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
 import React, { useState } from 'react';
-import { ChevronDown, Search } from 'lucide-react';
+import { ChevronDown, ChevronUp, Search } from 'lucide-react';
 
 const options = [
     { img: '/assets/Images/english.png', label: 'English' },
@@ -31,14 +31,14 @@ const Header = () => {
                             name='search'
                             id=''
                             placeholder='Search...'
-                            className='bg-white border outline-none rounded-2xl pl-4 py-1 shadow-lg placeholder:text-gray-400 w-[100px] min-[425px]:w-[150px] md:w-[120px] lg:w-auto focus:border-[--navbar-color] min-[320px]:placeholder:text-[14px]'
+                            className='bg-white border outline-none rounded-2xl px-4 py-1 shadow-sm placeholder:text-gray-400 w-[100px] min-[425px]:w-[150px] md:w-[120px] lg:w-auto focus:border-[--navbar-color] min-[320px]:placeholder:text-[14px]'
                         />
-                        <div className='bg-white flex justify-center items-center w-[30px] h-[30px] md:w-[35px] md:h-[35px] shadow-lg rounded-full border cursor-pointer'>
+                        <div className='bg-white flex justify-center items-center w-[30px] h-[30px] md:w-[35px] md:h-[35px] shadow-sm rounded-full border cursor-pointer'>
                             <Search className='w-[12px] md:w-[15px] text-[#388E3C]' />
                         </div>
                     </div>
                     <div>
-                        <div className='w-[120px] lg:min-w-[150px] relative inline-flex rounded-md bg-white shadow-lg'>
+                        <div className='w-[120px] lg:min-w-[150px] relative inline-flex rounded-md bg-white shadow-md hover:bg-gray-100'>
                             <div className='flex items-center gap-2 pl-2 lg:pl-4 cursor-pointer' onClick={toggling}>
                                 {selectedOption ? (
                                     <div className='flex items-center gap-1 lg:gap-2'>
@@ -52,19 +52,22 @@ const Header = () => {
                                     </div>
                                 )}
                             </div>
-                            <div className='relative' onClick={toggling}>
-                                <button
-                                    type='button'
-                                    className='border-1 border-gray-50 inline-flex h-full items-center justify-center rounded-r-md px-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700'
-                                >
-                                    <ChevronDown className='w-[16px] lg:w-[18px]'/>
-                                </button>
+                            <div className='relative ' onClick={toggling}>
+                                {isOpen ? (
+                                    <button type='button' className='border-1 border-gray-50 inline-flex h-full items-center justify-center rounded-r-md px-2 text-gray-500 '>
+                                        <ChevronUp className='w-[16px] lg:w-[18px]' />
+                                    </button>
+                                ) : (
+                                    <button type='button' className='border-1 border-gray-50 inline-flex h-full items-center justify-center rounded-r-md px-2 text-gray-500 '>
+                                        <ChevronDown className='w-[16px] lg:w-[18px]' />
+                                    </button>
+                                )}
                             </div>
                             {isOpen && (
                                 <div className=' absolute top-0 right-0 z-[60] mt-10 min-w-[150px] origin-top right rounded-md border border-gray-100 bg-white shadow-lg'>
                                     {options.map((option) => (
-                                        <div key={Math.random()}>
-                                            <button type='button' onClick={() => onOptionClicked(option)} className='flex items-center  pl-3'>
+                                        <div key={Math.random()} className='hover:bg-gray-100'>
+                                            <button type='button' onClick={() => onOptionClicked(option)} className='flex items-center pl-3 '>
                                                 <Image src={option.img} alt='english' width={20} height={20} />
                                                 <div className='block rounded-lg px-4 py-2  text-gray-500 no-underline hover:bg-gray-100 min-[320px]:text-[10px] md:text-[12px]'>{option.label}</div>
                                             </button>
