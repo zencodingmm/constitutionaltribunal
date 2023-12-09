@@ -14,7 +14,7 @@ const News = () => {
                 <h1 className=' text-[30px] text-[--text-color] text-center mb-8'>Daily News</h1>
                 <div className=' flex gap-10 flex-col lg:flex-row'>
                     {/* left section */}
-                    <div className='w-full lg:w-[50%] flex flex-col gap-[inherit]'>
+                    <div className='w-full lg:w-[50%] flex flex-col gap-[inherit] border border-transparent p-5 shadow-md'>
                         <div className='basis-[50%]'>
                             <Image className='object-cover w-full h-full' src={chairPerson} alt='new-image' />
                         </div>
@@ -31,7 +31,7 @@ const News = () => {
                     {/* right section */}
                     <div className='w-full lg:w-[50%] flex flex-col gap-[inherit]'>
                         {/* first */}
-                        <div className='flex flex-col md:flex-row gap-5 basis-[30%]'>
+                        <div className='flex flex-col md:flex-row gap-5 basis-[30%] border border-transparent p-5 shadow-md'>
                             <div className='basis-[40%] '>
                                 <Image src={thirdImage} alt='image' className='object-cover w-full h-full' />
                             </div>
@@ -45,7 +45,7 @@ const News = () => {
                         </div>
 
                         {/* second  */}
-                        <div className='flex flex-col md:flex-row gap-5  basis-[30%]'>
+                        <div className='flex flex-col md:flex-row gap-5  basis-[30%] border border-transparent p-5 shadow-md'>
                             <div className='basis-[40%]'>
                                 <Image src={secondImage} alt='image' className='object-cover w-full h-full' />
                             </div>
@@ -59,7 +59,7 @@ const News = () => {
                         </div>
 
                         {/* third */}
-                        <div className='flex flex-col md:flex-row gap-5  basis-[30%]'>
+                        <div className='flex flex-col md:flex-row gap-5  basis-[30%] border border-transparent p-5 shadow-md'>
                             <div className='basis-[40%]'>
                                 <Image src={firstImage} alt='image' className='object-cover w-full h-full' />
                             </div>
